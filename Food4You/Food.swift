@@ -13,4 +13,7 @@ struct Food: Identifiable, Hashable {
     var person: String
     var name: String
     var image: String
+    var description: String
+    
+    static var testPerson = Food(person: "Test", name: "test", image: "Thaigreencurry", description: "TestDescription")
 }

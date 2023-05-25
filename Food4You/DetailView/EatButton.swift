@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BookingButton: View {
-    var bookingButton: String
     var body: some View {
         Button("Eat"){
             
@@ -21,6 +20,6 @@ struct BookingButton: View {
 
 struct BookingButton_Previews: PreviewProvider {
     static var previews: some View {
-        BookingButton(bookingButton: "")
+        BookingButton()
     }
 }

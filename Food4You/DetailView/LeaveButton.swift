@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct LeaveButton: View {
-    var leaveButton : String
     var body: some View {
         Button("Leave"){
             
         }
         .tint(.red)
         .buttonStyle(.borderedProminent)
-        .controlSize(.small)
+        .controlSize(.large)
         .bold()
     }
 }
 
 struct CancelButton_Previews: PreviewProvider {
     static var previews: some View {
-        LeaveButton(leaveButton: "")
+        LeaveButton()
     }
 }

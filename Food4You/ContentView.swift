@@ -11,73 +11,40 @@ import SwiftUI
 
 struct ContentView: View {
     let foodList = [
-        Food(person: "Isack", name: "Thai Green Curry", image: "thaigreencurry"),
-        Food(person: "Isack", name: "Steak", image: "steak"),
-        Food(person: "Isack", name: "Bolognese", image: "bolognese"),
-        Food(person: "Isack", name: "Summerrolls", image: "summerrolls"),
-        Food(person: "Isack", name: "Chicken and Rice", image: "chickenrice"),
-        Food(person: "Ariya", name: "Creme Brulee", image: "brulee"),
-        Food(person: "Ariya", name: "Kubideh", image: "kubideh"),
-        Food(person: "Ariya", name: "Pilpil", image: "pilpil"),
-        Food(person: "Ariya", name: "Ramen", image: "ramen"),
-        Food(person: "Ariya", name: "Wrap", image: "wrap"),
-        Food(person: "Edgar", name: "Bolognese", image: "bolognese 1"),
-        Food(person: "Edgar", name: "Braten", image: "braten"),
-        Food(person: "Edgar", name: "Entrecote", image: "entrecote"),
-        Food(person: "Edgar", name: "Lasagna", image: "lasagna"),
-        Food(person: "Edgar", name: "Pizza", image: "pizza")
+        Food(person: "Isack", name: "Thai Green Curry", image: "thaigreencurry", description: "Is my favorite food"),
+        Food(person: "Isack", name: "Steak", image: "steak", description: "Must be well done"),
+        Food(person: "Isack", name: "Bolognese", image: "bolognese", description: "Takes long to cook but its good"),
+        Food(person: "Isack", name: "Summerrolls", image: "summerrolls", description: "Easy to make and easy to eat"),
+        Food(person: "Isack", name: "Chicken and Rice", image: "chickenrice", description: "Fun fact: its cooked in chickenbroth"),
+        
+        Food(person: "Ariya", name: "Creme Brulee", image: "brulee", description: ""),
+        Food(person: "Ariya", name: "Kubideh", image: "kubideh", description: ""),
+        Food(person: "Ariya", name: "Pilpil", image: "pilpil", description: ""),
+        Food(person: "Ariya", name: "Ramen", image: "ramen", description: ""),
+        Food(person: "Ariya", name: "Wrap", image: "wrap",description: ""),
+        
+        Food(person: "Edgar", name: "Bolognese", image: "bolognese 1", description: ""),
+        Food(person: "Edgar", name: "Braten", image: "braten", description: ""),
+        Food(person: "Edgar", name: "Entrecote", image: "entrecote",description: ""),
+        Food(person: "Edgar", name: "Lasagna", image: "lasagna", description: ""),
+        Food(person: "Edgar", name: "Pizza", image: "pizza", description: "")
     ]
     
     var body: some View {
         
         NavigationStack() {
             List {
-                Section("Ariya") {
-                    ForEach(foodList) { food in
-                        if food.person == "Ariya"{
-                            HStack{
-                                Image(food.image)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
-                                NavigationLink(food.name, value: food)
-                            }
-                        }
-                    }
+                Section("Ariya"){
+                    SectionView(list: foodList.filter({$0.person == "Ariya"}))
                 }
                 
-                Section("Edgar") {
-                    ForEach(foodList) { food in
-                        if food.person == "Edgar"{
-                            HStack{
-                                Image(food.image)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
-                                NavigationLink(food.name, value: food)
-                            }
-                        }
-                    }
+                Section("Edgar"){
+                    SectionView(list: foodList.filter({$0.person == "Edgar"}))
                 }
                 
-                Section("Isack") {
-                    ForEach(foodList) { food in
-                        if food.person == "Isack"{
-                            HStack{
-                                Image(food.image)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
-                                NavigationLink(food.name, value: food)
-                            }
-                        }
-                    }
+                Section("Isack"){
+                    SectionView(list: foodList.filter({$0.person == "Isack"}))
                 }
-            }
-            .navigationDestination(for: Food.self) { details in
-                Image(details.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
             }
             .navigationTitle("Favorite Foods")
         }
