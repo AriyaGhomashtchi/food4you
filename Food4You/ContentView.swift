@@ -27,8 +27,6 @@ struct ContentView: View {
         Food(person: "Edgar", name: "Pizza", image: "pizza")
     ]
     
-    //    @State var navPath = NavigationPath()
-    
     var body: some View {
         
         NavigationStack() {
