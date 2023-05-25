@@ -37,7 +37,7 @@ struct ContentView: View {
                             HStack{
                                 Image(food.image)
                                     .resizable()
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 80, height: 80)
                                     .cornerRadius(50)
                                 NavigationLink(food.name, value: food)
                             }
