@@ -10,7 +10,7 @@ import SwiftUI
 struct CircleImage: View {
     var circleImage: String
     var body: some View {
-        Image("bolognese")
+        Image(circleImage)
             .resizable()
             .scaledToFit()
             .clipShape(Circle())

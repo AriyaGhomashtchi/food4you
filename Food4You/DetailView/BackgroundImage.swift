@@ -10,7 +10,7 @@ import SwiftUI
 struct BackgroundImage: View {
     var backroundImage: String
     var body: some View {
-        Image("bolognese")
+        Image(backroundImage)
             .resizable()
             .scaledToFit()
             .blur(radius:2)

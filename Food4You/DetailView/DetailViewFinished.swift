@@ -23,6 +23,7 @@ struct DetailViewFinished: View {
                                 
                 TitleText(titleText: detailFood.name)
                 AuthorText(authorText: detailFood.person)
+                    .fontWeight(.ultraLight)
                 DescriptionText(descriptionText: detailFood.description)
                 
                 Spacer()

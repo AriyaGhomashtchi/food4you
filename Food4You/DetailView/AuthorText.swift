@@ -10,13 +10,13 @@ import SwiftUI
 struct AuthorText: View {
     var authorText : String
     var body: some View {
-        Text(authorText)
+        Text("by \(authorText)")
             .fontWeight(.ultraLight)
     }
 }
 
 struct AuthorText_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorText(authorText: "by Isack Häring")
+        AuthorText(authorText: "Isack Häring")
     }
 }
