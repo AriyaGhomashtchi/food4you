@@ -15,6 +15,7 @@ struct ContentView: View {
         Food(person: "Isack", name: "Steak", image: "steak"),
         Food(person: "Isack", name: "Bolognese", image: "bolognese"),
         Food(person: "Isack", name: "Summerrolls", image: "summerrolls"),
+        Food(person: "Isack", name: "Chicken and Rice", image: "chickenrice"),
         Food(person: "Ariya", name: "Creme Brulee", image: "brulee"),
         Food(person: "Ariya", name: "Kubideh", image: "kubideh"),
         Food(person: "Ariya", name: "Pilpil", image: "pilpil"),
@@ -35,10 +36,9 @@ struct ContentView: View {
                     ForEach(foodList) { food in
                         if food.person == "Ariya"{
                             HStack{
-                                Text("This is the change123")
                                 Image(food.image)
                                     .resizable()
-                                    .frame(width: 80, height: 80)
+                                    .frame(width: 50, height: 50)
                                     .cornerRadius(50)
                                 NavigationLink(food.name, value: food)
                             }

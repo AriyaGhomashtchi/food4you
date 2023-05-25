@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct TitleText: View {
+    var titleText : String
     var body: some View {
-        Text("Hello Isack")
-            .bold()
+        Text(titleText)
+        .foregroundColor(.gray)
+        .fontWeight(.bold)
+        .font(.system(size: 33))
     }
 }
 
 struct TitleText_Previews: PreviewProvider {
     static var previews: some View {
-        TitleText()
+        TitleText(titleText: "Spaghetti Bolognese")
     }
 }
