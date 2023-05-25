@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C0B671692A1F7E4900253845 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B671682A1F7E4900253845 /* TitleText.swift */; };
+		C0B6716B2A1F81CD00253845 /* DescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6716A2A1F81CD00253845 /* DescriptionText.swift */; };
+		C0B6716D2A1F823600253845 /* AuthorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6716C2A1F823600253845 /* AuthorText.swift */; };
+		C0B6716F2A1F828600253845 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6716E2A1F828600253845 /* CircleImage.swift */; };
+		C0B671712A1F84A400253845 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B671702A1F84A400253845 /* BackgroundImage.swift */; };
+		C0B671752A1F85D500253845 /* EatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B671742A1F85D500253845 /* EatButton.swift */; };
+		C0B671772A1F860400253845 /* LeaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B671762A1F860400253845 /* LeaveButton.swift */; };
 		C0FEDB212A1F574400DCF4AC /* Food4YouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FEDB202A1F574400DCF4AC /* Food4YouApp.swift */; };
 		C0FEDB232A1F574400DCF4AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FEDB222A1F574400DCF4AC /* ContentView.swift */; };
 		C0FEDB252A1F574500DCF4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FEDB242A1F574500DCF4AC /* Assets.xcassets */; };
@@ -17,6 +23,12 @@
 
 /* Begin PBXFileReference section */
 		C0B671682A1F7E4900253845 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		C0B6716A2A1F81CD00253845 /* DescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionText.swift; sourceTree = "<group>"; };
+		C0B6716C2A1F823600253845 /* AuthorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorText.swift; sourceTree = "<group>"; };
+		C0B6716E2A1F828600253845 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C0B671702A1F84A400253845 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		C0B671742A1F85D500253845 /* EatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatButton.swift; sourceTree = "<group>"; };
+		C0B671762A1F860400253845 /* LeaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveButton.swift; sourceTree = "<group>"; };
 		C0FEDB1D2A1F574400DCF4AC /* Food4You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food4You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FEDB202A1F574400DCF4AC /* Food4YouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food4YouApp.swift; sourceTree = "<group>"; };
 		C0FEDB222A1F574400DCF4AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +52,12 @@
 			isa = PBXGroup;
 			children = (
 				C0B671682A1F7E4900253845 /* TitleText.swift */,
+				C0B6716A2A1F81CD00253845 /* DescriptionText.swift */,
+				C0B6716C2A1F823600253845 /* AuthorText.swift */,
+				C0B6716E2A1F828600253845 /* CircleImage.swift */,
+				C0B671702A1F84A400253845 /* BackgroundImage.swift */,
+				C0B671742A1F85D500253845 /* EatButton.swift */,
+				C0B671762A1F860400253845 /* LeaveButton.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -152,9 +170,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0FEDB232A1F574400DCF4AC /* ContentView.swift in Sources */,
+				C0B671752A1F85D500253845 /* EatButton.swift in Sources */,
+				C0B6716D2A1F823600253845 /* AuthorText.swift in Sources */,
 				C0B671692A1F7E4900253845 /* TitleText.swift in Sources */,
+				C0B671712A1F84A400253845 /* BackgroundImage.swift in Sources */,
+				C0B6716F2A1F828600253845 /* CircleImage.swift in Sources */,
 				C0FEDB212A1F574400DCF4AC /* Food4YouApp.swift in Sources */,
+				C0B6716B2A1F81CD00253845 /* DescriptionText.swift in Sources */,
 				DC729D682A1F614C00E574A1 /* Food.swift in Sources */,
+				C0B671772A1F860400253845 /* LeaveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
