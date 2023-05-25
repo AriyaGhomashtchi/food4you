@@ -35,7 +35,7 @@ struct ContentView: View {
                     ForEach(foodList) { food in
                         if food.person == "Ariya"{
                             HStack{
-                                Text("This is the change")
+                                Text("This is the change123")
                                 Image(food.image)
                                     .resizable()
                                     .frame(width: 50, height: 50)
