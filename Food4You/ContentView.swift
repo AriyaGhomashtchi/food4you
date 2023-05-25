@@ -26,9 +26,7 @@ struct ContentView: View {
         Food(person: "Edgar", name: "Lasagna", image: "lasagna"),
         Food(person: "Edgar", name: "Pizza", image: "pizza")
     ]
-    
-    //    @State var navPath = NavigationPath()
-    
+        
     var body: some View {
         
         NavigationStack() {
@@ -39,8 +37,8 @@ struct ContentView: View {
                             HStack{
                                 Image(food.image)
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
                                 NavigationLink(food.name, value: food)
                             }
                         }
@@ -53,8 +51,8 @@ struct ContentView: View {
                             HStack{
                                 Image(food.image)
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
                                 NavigationLink(food.name, value: food)
                             }
                         }
@@ -67,8 +65,8 @@ struct ContentView: View {
                             HStack{
                                 Image(food.image)
                                     .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 50, height: 50)
-                                    .cornerRadius(50)
                                 NavigationLink(food.name, value: food)
                             }
                         }
