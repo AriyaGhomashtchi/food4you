@@ -35,6 +35,7 @@ struct ContentView: View {
                     ForEach(foodList) { food in
                         if food.person == "Ariya"{
                             HStack{
+                                Text("This is the change")
                                 Image(food.image)
                                     .resizable()
                                     .frame(width: 80, height: 80)
@@ -78,6 +79,7 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
+            .navigationTitle("Favorite Foods")
         }
     }
 }
