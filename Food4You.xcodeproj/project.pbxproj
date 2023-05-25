@@ -11,6 +11,7 @@
 		C0FEDB232A1F574400DCF4AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FEDB222A1F574400DCF4AC /* ContentView.swift */; };
 		C0FEDB252A1F574500DCF4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FEDB242A1F574500DCF4AC /* Assets.xcassets */; };
 		C0FEDB282A1F574500DCF4AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FEDB272A1F574500DCF4AC /* Preview Assets.xcassets */; };
+		DC729D682A1F614C00E574A1 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC729D672A1F614C00E574A1 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C0FEDB222A1F574400DCF4AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0FEDB242A1F574500DCF4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0FEDB272A1F574500DCF4AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC729D672A1F614C00E574A1 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				C0FEDB222A1F574400DCF4AC /* ContentView.swift */,
 				C0FEDB242A1F574500DCF4AC /* Assets.xcassets */,
 				C0FEDB262A1F574500DCF4AC /* Preview Content */,
+				DC729D672A1F614C00E574A1 /* Food.swift */,
 			);
 			path = Food4You;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				C0FEDB232A1F574400DCF4AC /* ContentView.swift in Sources */,
 				C0FEDB212A1F574400DCF4AC /* Food4YouApp.swift in Sources */,
+				DC729D682A1F614C00E574A1 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
