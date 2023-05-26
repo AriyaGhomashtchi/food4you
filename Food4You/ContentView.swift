@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Food4You
 //
-//  Created by Ariya Ghomashtchi on 25.05.23.
+//  Created by Edgar Becker on 25.05.23.
 //
 
 import SwiftUI
@@ -33,6 +33,7 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack() {
+            // Hier erlaube ich der Navigation zu Funktionieren.
             List {
                 Section("Ariya"){
                     SectionView(list: foodList.filter({$0.person == "Ariya"}))

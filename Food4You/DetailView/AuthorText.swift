@@ -2,7 +2,7 @@
 //  AuthorText.swift
 //  Food4You
 //
-//  Created by Ariya Ghomashtchi on 25.05.23.
+//  Created by Edgar Becker on 25.05.23.
 //
 
 import SwiftUI
@@ -17,6 +17,6 @@ struct AuthorText: View {
 
 struct AuthorText_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorText(authorText: "Isack Häring")
+        AuthorText(authorText: "Edgar Becker")
     }
 }

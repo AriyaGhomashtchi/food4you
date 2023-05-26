@@ -2,7 +2,7 @@
 //  DescriptionText.swift
 //  Food4You
 //
-//  Created by Ariya Ghomashtchi on 25.05.23.
+//  Created by Edgar Becker  on 25.05.23.
 //
 
 import SwiftUI
@@ -17,6 +17,6 @@ struct DescriptionText: View {
 
 struct DescriptionText_Previews: PreviewProvider {
     static var previews: some View {
-        DescriptionText(descriptionText: "Spaghetti Bolognese ist lecker.")
+        DescriptionText(descriptionText: "Spaghetti Bolognese ist der Wahnsinn.")
     }
 }

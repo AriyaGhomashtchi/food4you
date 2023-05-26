@@ -2,7 +2,7 @@
 //  EatButton.swift
 //  Food4You
 //
-//  Created by Ariya Ghomashtchi on 25.05.23.
+//  Created by Edgar Becker on 25.05.23.
 //
 
 import SwiftUI

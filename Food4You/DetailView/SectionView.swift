@@ -19,13 +19,14 @@ struct SectionView: View {
                     .frame(width: 50, height: 50)
                     .cornerRadius(50)
                 NavigationLink(food.name) {
+                    //Der Navigationslink führt zum                    DetailViewFinished(destination) Screen.
                     DetailViewFinished(detailFood: food)
+                    
                 }
             }
         }
     }
 }
-
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
         SectionView(list: [Food.testPerson])

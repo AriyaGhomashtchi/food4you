@@ -2,7 +2,7 @@
 //  DetailViewFinished.swift
 //  Food4You
 //
-//  Created by Isack Häring on 25.05.23.
+//  Created by Edgar Becker  on 25.05.23.
 //
 
 import SwiftUI
